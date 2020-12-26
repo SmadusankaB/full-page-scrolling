@@ -1,0 +1,86 @@
+<div class="main-wrapper">
+
+
+  <div class="step-container">
+    <div class="step" [ngClass]="{'active': activeUIIndex === 1}" pageScroll (click)="scrollCustomImplementation(sec1, 1)">
+      <div class="v-stepper">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="step" [ngClass]="{'active': activeUIIndex === 2}" pageScroll (click)="scrollCustomImplementation(sec2, 2)">
+      <div class="v-stepper">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="step" [ngClass]="{'active': activeUIIndex === 3}" pageScroll (click)="scrollCustomImplementation(sec3, 3)">
+      <div class="v-stepper">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="step" [ngClass]="{'active': activeUIIndex === 4}" pageScroll (click)="scrollCustomImplementation(sec4, 4)">
+      <div class="v-stepper">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="step" [ngClass]="{'active': activeUIIndex === 5}" pageScroll (click)="scrollCustomImplementation(sec5, 5)">
+      <div class="v-stepper">
+        <div class="circle"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div #sec1 class="card-wrapper">
+    <div class="card">
+      <div class="card-container">
+        <h4><b>John Doe 1</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+  </div>
+
+<div #sec2 class="card-wrapper">
+    <div class="card">
+      <div class="container">
+        <h4><b>John Doe 2</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+  </div>
+
+  <div #sec3 class="card-wrapper">
+    <div class="card">
+      <div class="container">
+        <h4><b>John Doe 3</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+  </div>
+
+  <div #sec4 class="card-wrapper">
+    <div class="card">
+      <div class="container">
+        <h4><b>John Doe 4</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+  </div>
+
+  <div #sec5 class="card-wrapper">
+    <div class="card">
+      <div class="container">
+        <h4><b>John Doe 5</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
